@@ -1,2 +1,1 @@
-# its-your-birthday
-a URL shortener that doesn't suck
+# It's your birthday
