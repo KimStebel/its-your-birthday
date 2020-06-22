@@ -1,6 +1,8 @@
-#!/bin/sh -l
+#!/bin/sh
+
+set -o errexit
+set -o nounset
 
 echo "starting the build..."
-pwd
-tree
+sbt compile run
 echo "end of build"
