@@ -1,7 +1,5 @@
 name: 'build'
 description: 'build a docker container for the service'
-inputs:
-outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
