@@ -7,6 +7,7 @@ RUN apk add clang bash libunwind-dev wget && \
     apk del wget
 RUN tar xf sbt-1.3.4.tgz
 ENV PATH=/opt/sbt/bin:$PATH
+RUN sbt sbtVersion
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
