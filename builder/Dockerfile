@@ -6,6 +6,7 @@ RUN apk add clang tree libunwind wget && \
     wget --quiet --no-check-certificate https://piccolo.link/sbt-1.3.4.tgz && \
     apk del wget
 RUN tar xf sbt-1.3.4.tgz
+ENV PATH=/opt/sbt/bin:$PATH
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
